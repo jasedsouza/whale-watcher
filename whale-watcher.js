@@ -15,3 +15,17 @@ let getAccountBalances = '?module=account&action=balancemulti&address='+watched_
 etherscan.get(getAccountBalances).then(resp => {
     console.log(resp.data.result[0].balance);
 });
+
+
+//Post String into Discord Bot
+async function makeGetRequest() {
+
+    let payload = { "content": "<Insert String>" };
+
+    let res = await axios.post('<Insert webhook endpoint>', payload);
+
+    let data = res.data;
+    console.log(data);
+}
+
+makeGetRequest();
