@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "axios": "^0.26.1",
+    "bignumber.js": "^9.0.2"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
